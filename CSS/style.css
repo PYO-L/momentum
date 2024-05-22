@@ -89,57 +89,37 @@ body {
   position: fixed;
   bottom: 40%;
   right: 35%;
-  width: 100%;
-  max-width: 600px;
+  width: 600px;
   max-height: 50px; /* 최대 높이 지정 */
-  margin: 0 auto;
-  padding: 20px;
   background-color: rgba(248, 249, 250, 0); /* 배경을 완전히 투명하게 설정 */
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #todo-form {
-  margin-bottom: 20px;
-
   display: flex;
   justify-content: space-between; /* 입력 필드와 버튼 사이에 간격 추가 */
 }
 
 #todo-form input[type='text'] {
   flex: 1; /* 입력 필드가 가능한 최대 너비를 차지하도록 설정 */
-  padding: 12px;
+  padding: 15px;
   border: none;
   background-color: rgba(248, 249, 250, 0);
   color: white;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 24px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* 입력 필드에 약간의 그림자 효과 */
 }
 /* 입력 필드의 플레이스홀더 스타일 */
 #todo-form input[type='text']::placeholder {
   color: white; /* 플레이스홀더 텍스트 색상을 하얀색으로 설정 */
   font-size: 30px;
+
   font-weight: 600;
   text-align: center;
   font-style: italic;
   border-bottom: 3px solid white;
-}
-
-#todo-form button {
-  width: 100px;
-  padding: 12px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 전환 */
-}
-
-#todo-form button:hover {
-  background-color: #45a049; /* 버튼에 호버 효과 추가 */
 }
 
 #todo-list {
@@ -166,7 +146,7 @@ body {
 }
 
 #todo-list li button {
-  background-color: #e9dedd;
+  background-color: #e9dedd00;
   color: white;
   border: none;
   border-radius: 5px;
@@ -182,19 +162,22 @@ body {
 /* 날씨 정보 스타일링 */
 #weather {
   position: absolute;
-  top: 20%;
-  right: 20px;
-  text-align: right;
+  top: 10%;
+  right: 25px;
+  text-align: center;
   font-size: 24px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-style: italic;
 }
 #quote {
   position: absolute;
   bottom: 5%;
-  max-width: 700px;
+  max-width: 600px;
+  min-width: 400px;
   text-align: center;
   font-size: 20px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-style: italic;
 }
